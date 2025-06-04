@@ -26,6 +26,7 @@ const Collection = () => {
       setSubCategory(prev=>[...prev,e.target.value]);
     }
   }
+  
 
 
 
