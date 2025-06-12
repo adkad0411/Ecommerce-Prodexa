@@ -36,7 +36,7 @@ const loginUser=async(request,response)=>{
             return response.status(400).send({
                 success:false,
                 error:true,
-                error:error.message
+                message:error.message
             })
         }
         return response.status(500).send({
@@ -96,7 +96,7 @@ const registerUser=async(request,response)=>{
         return response.status(500).send({
             success:false,
             error:true,
-            error:error||error?.message || "Internal Server Error"
+            message:error||error?.message || "Internal Server Error"
         });
     }
 }
